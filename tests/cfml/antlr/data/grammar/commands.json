@@ -1,0 +1,606 @@
+{
+    "cfdistro":{
+        "war":{
+            "HINT":"Generate war\nex: war destination=/directory/to/store/in",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"destination",
+                    "type":"string"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"war"
+        },
+        "server-start":{
+            "HINT":"start server\nex: war destination=/directory/to/store/in",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"war",
+                    "type":"string"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"serverStart"
+        },
+        "help":{
+            "HINT":"cfdistro help",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"help"
+        },
+        "nothing":{
+            "HINT":"cfdistro nothing",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"nothing"
+        },
+        "install":{
+            "HINT":"download and install cfdistro",
+            "PARAMETERS":[
+                {
+                    "default":"latest",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"version",
+                    "type":"string"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"install"
+        },
+        "dependency":{
+            "HINT":"Get dependency",
+            "PARAMETERS":[
+                {
+                    "required":true,
+                    "HINT":"No help available",
+                    "name":"artifactId",
+                    "type":"any"
+                },
+                {
+                    "required":true,
+                    "HINT":"No help available",
+                    "name":"groupId",
+                    "type":"any"
+                },
+                {
+                    "required":true,
+                    "HINT":"No help available",
+                    "name":"version",
+                    "type":"any"
+                },
+                {
+                    "default":"zip",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"type",
+                    "type":"any"
+                },
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"classifier",
+                    "type":"any"
+                },
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"mapping",
+                    "type":"any"
+                },
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"exclusions",
+                    "type":"any"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"dependency"
+        }
+    },
+    "":{
+        "cfdump":{
+            "HINT":"dump a variable",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"variable to dump",
+                    "name":"var",
+                    "type":"any"
+                },
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"label",
+                    "type":"any"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"dumpvar"
+        },
+        "info":{
+            "HINT":"information",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"info"
+        },
+        "q":{
+            "HINT":"Exit",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"exit"
+        },
+        "pwd":{
+            "HINT":"print working directory (current dir)",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"pwd"
+        },
+        "run":{
+            "HINT":"run server",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"runServer"
+        },
+        "update":{
+            "HINT":"upgrades the shell libraries",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"upgrade"
+        },
+        "dir":{
+            "HINT":"List directories\nex: dir /my/path",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"directory",
+                    "name":"directory",
+                    "type":"string"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"recursively list",
+                    "name":"recurse",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"dir"
+        },
+        "cat":{
+            "HINT":"display file contents",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"file to view contents of",
+                    "name":"file",
+                    "type":"any"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"cat"
+        },
+        "execute":{
+            "HINT":"executes a cfml file",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"file",
+                    "type":"any"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"execute"
+        },
+        "del":{
+            "HINT":"delete a file or directory",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":true,
+                    "hint":"file or directory to delete",
+                    "name":"file",
+                    "type":"any"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"force deletion",
+                    "name":"force",
+                    "type":"boolean"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"recursive deletion of files",
+                    "name":"recurse",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"delete"
+        },
+        "e":{
+            "HINT":"Exit",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"exit"
+        },
+        "upgrade":{
+            "HINT":"upgrades the shell libraries",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"upgrade"
+        },
+        "quit":{
+            "HINT":"Exit",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"exit"
+        },
+        "ls":{
+            "HINT":"List directories\nex: dir /my/path",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"directory",
+                    "name":"directory",
+                    "type":"string"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"recursively list",
+                    "name":"recurse",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"dir"
+        },
+        "version":{
+            "HINT":"returns shell version",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"version"
+        },
+        "exit":{
+            "HINT":"Exit",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"exit"
+        },
+        "reload":{
+            "HINT":"Reload CLI",
+            "PARAMETERS":[
+                {
+                    "default":true,
+                    "required":false,
+                    "hint":"clears the screen after reload",
+                    "name":"clearScreen",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"reload"
+        },
+        "echo":{
+            "HINT":"echoes output",
+            "PARAMETERS":[
+                {
+                    "required":true,
+                    "hint":"message",
+                    "name":"message",
+                    "type":"string"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"echo"
+        },
+        "help":{
+            "HINT":"display help information",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"namespace (or namespaceless command) to get help for",
+                    "name":"namespace",
+                    "type":"string"
+                },
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"command to get help for",
+                    "aliases":"h,
+                    ?",
+                    "name":"command",
+                    "type":"string"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"help"
+        },
+        "directory":{
+            "HINT":"List directories\nex: dir /my/path",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"directory",
+                    "name":"directory",
+                    "type":"string"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"recursively list",
+                    "name":"recurse",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"dir"
+        },
+        "stop":{
+            "HINT":"stop server",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"stopServer"
+        },
+        "cd":{
+            "HINT":"change directory",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"directory to CD to",
+                    "name":"directory",
+                    "type":"any"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"cd"
+        },
+        "rm":{
+            "HINT":"delete a file or directory",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":true,
+                    "hint":"file or directory to delete",
+                    "name":"file",
+                    "type":"any"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"force deletion",
+                    "name":"force",
+                    "type":"boolean"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"recursive deletion of files",
+                    "name":"recurse",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"delete"
+        },
+        "clear":{
+            "HINT":"Clear screen",
+            "PARAMETERS":[
+                
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"clear"
+        },
+        "update-engine":{
+            "HINT":"updates the engine",
+            "PARAMETERS":[
+                {
+                    "default":false,
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"force",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"updateengine"
+        },
+        "type":{
+            "HINT":"display file contents",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"file to view contents of",
+                    "name":"file",
+                    "type":"any"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"cat"
+        },
+        "delete":{
+            "HINT":"delete a file or directory",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":true,
+                    "hint":"file or directory to delete",
+                    "name":"file",
+                    "type":"any"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"force deletion",
+                    "name":"force",
+                    "type":"boolean"
+                },
+                {
+                    "default":false,
+                    "required":false,
+                    "hint":"recursive deletion of files",
+                    "name":"recurse",
+                    "type":"boolean"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"delete"
+        },
+        "dump":{
+            "HINT":"dump a variable",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "hint":"variable to dump",
+                    "name":"var",
+                    "type":"any"
+                },
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"label",
+                    "type":"any"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"dumpvar"
+        },
+        "prompt":{
+            "HINT":"Set prompt",
+            "PARAMETERS":[
+                {
+                    "default":"",
+                    "required":false,
+                    "HINT":"No help available",
+                    "name":"prompt",
+                    "type":"string"
+                }
+            ],
+            "CFC":{
+                
+            },
+            "FUNCTIONNAME":"prompt"
+        }
+    }
+}
