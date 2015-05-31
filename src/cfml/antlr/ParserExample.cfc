@@ -90,6 +90,7 @@ component output="false" persistent="false" {
 		var input = java.ANTLRInputStream.init(commandLine);
 		var lexer = java.CommandGrammarLexer.init(input, variables.commands);
 		var railoListener = java.RailoListener.init();
+//        var railoListener =  createDynamicProxy(this, ["org.antlr.v4.runtime.ANTLRErrorListener"]);
 		railoListener.setListener(this);
 		lexer.removeErrorListeners();
 		lexer.addErrorListener(railoListener);
